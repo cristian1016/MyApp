@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T I E N D A</title>
+  <link rel="shortcut icon" href="/public/img/default.png" type="image/x-icon">
+  <link rel="stylesheet" href="/public/css/style_articulos.css">
+</head>
+<main>
+
+  <body>
+    <header>
+      <nav id="contenedor_header">
+        <div class="logo_header">
+          <img src="../public/img/Logo-FondoVerde.png" alt="">
+
+          <hr id="linea_Vertical">
+          <div>
+            <h1>MERCADO CAMPESINO</h1>
+            <h2>LA MEJOR CALIDAD</h2>
+          </div>
+        </div>
+
+
+        <div class="links_header">
+          <td class="co">
+            <%if (!nombres) { %>
+              <a class="registro" href="/interfaz-registro">Registro</a>
+              <% } %>
+          </td>
+
+          <td class="co">
+            <%if (nombres ) { %>
+              <a class="nav-link" href="#">
+                <%= nombres %>
+              </a>
+              <% } %>
+          </td>
+
+          <td class="salir">
+            <%if (nombres) { %>
+              <a href="/logout">SALIR</a>
+              <% } %>
+          </td>
+
+          <td class="login">
+            <%if (!nombres) { %>
+              <a class="interfazlogin" href="/interfaz-login">Login</a>
+              <% } %>
+          </td>
+        </div>
+      </nav>
+    </header>
+
+    <div class="barra">
+      <a class="link" href="/">Inicio</a>
+    </div>
+    <hr id="barra_navegacion">
+    
+    <div id="calidad_productos">
+      <div>
+        <h1>¡CONOCE MÁS CALIDAD!</h1>
+        <h2>Productos frescos al mejor precio</h2>
+      </div>
+      <div id="contenedorBarra">
+        <div class="buscar">
+          <input type="text" placeholder="Buscar" required />
+
+          <div class="btn">
+            <img src="../public/img/Logo_lupa.png" alt="" width="30px" height="30px">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="todo">
+      <% for (let i=0; i < articulos.length; i++) { %>
+        <div class="catalogo-f">
+
+          <div class="ropa">
+
+            <img src="<%= articulos[i].url_imagen %>" alt="" />
+            <h4>
+              <%= articulos[i].nombre %>
+            </h4>
+            <hr class="Linea_producto">
+            <div class="Precio_producto">
+              <p>
+                <%= articulos[i].valor %>
+              </p>
+              <p>
+                <%= articulos[i].peso %>
+              </p>
+            </div>
+            <a href=/detalle-producto/<%=articulos[i].codigo %>>comprar</a>
+          </div>
+        </div>
+        <%} %>
+    </div>
+
+
+    <!-- <div id="hojas_footer">
+        <img src="Img/HojasAbajo_Izq.png" alt="">
+        <img src="Img/HojasAbajo_Dere.png" alt="">
+    </div> -->
+    <footer>
+
+      <div id="contenedor_informacion">
+
+        <div id="email">
+          <img src="../public/img/Logo_Email.png" alt="">
+          <h3>Email</h3>
+          <p>MercadoCampesino@gmail.com</p>
+        </div>
+
+        <hr>
+        <div id="sobre_nosotros">
+          <img src="../public/Img/Logo_tiendaSobreNosotros.png" alt="">
+          <h3>Sobre nosotros</h3>
+          <p>Como mercado campesino queremos ofrecerles a nuestros usuarios, un lugar seguro y de
+            buena calidad
+            donde puedan comprar y/o vender sus productos agricolas, sin intermediarios y de
+            forma directa.</p>
+        </div>
+        <hr>
+        <div id="contacto">
+          <img src="../public/Img/Logo_telefono.png" alt="">
+          <h3>Contactanos</h3>
+          <p>+57 313-629-7064</p>
+          <p>+57 312-456-1367</p>
+        </div>
+
+      </div>
+
+      <div id="Lineas_footer">
+        <hr id="Linea_footer">
+        <hr id="Linea_footer">
+      </div>
+
+      <div id="contenedor_Pag-po">
+
+        <div id="politicas_pagos">
+          <h3>Métodos de pago</h3>
+          <div class="politicas_pagos">
+            <img src="../public/Img/Logo_compraVISA.png" alt="">
+            <img src="../public/Img/Logo_compraBancC.png" alt="">
+          </div>
+          <div class="politicas_pagos">
+            <img src="../public/Img/Logo_compraEfecty.png" alt="">
+            <img src="../public/Img/Logo_compraDaviV.png" alt="">
+          </div>
+        </div>
+        <hr>
+        <div id="terminosYCondiciones">
+          <h3>Terminos y condiciones</h3>
+          <div id="links_terminos">
+            <a href="">Contrato de compraventa en linea</a>
+            <a href="">Politíca de privacidad</a>
+            <a href="">Politíca de cambios y devoluciones</a>
+            <a href="">Código de ética</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </body>
+</main>
+
+</html>

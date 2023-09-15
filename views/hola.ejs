@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/public/img/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/style_detalle.css">
+    <title>TIENDA</title>
+</head>
+
+<main>
+
+    <body>
+        <header>
+            <table>
+                <td class="lupa"><a href="./index.ejs">BUSCAR</a></td>
+                <td class="car"><a href="./index.ejs">CARRITO</a></td>
+
+                <td class="d"><a href="/">D E F A U L T H</a></td>
+                <td><a href="/"><img class="foto1" src="/public/img/logo.png" alt="logo" /></a></td>
+                <td class="m"><a href="/">M E M B E R S</a></td>
+                <td class="co">
+
+                    <%if (!nombres) { %>
+                        <a class="registro" href="/interfaz-registro">Registro</a>
+                        <% } %>
+                </td>
+
+                <td class="co">
+                    <%if (nombres ) { %>
+                        <a class="nav-link" href="#"><strong>
+                                <%= nombres %>
+                            </strong></a>
+                        <% } %>
+                </td>
+
+                <td class="salir">
+                    <%if (nombres) { %>
+                        <a href="/logout">SALIR</a>
+                        <% } %>
+                </td>
+
+                <td class="login">
+                    <%if (!nombres) { %>
+                        <a class="interfazlogin" href="/interfaz-login">Login</a>
+                        <% } %>
+                </td>
+
+
+
+                <div class="clear"></div>
+            </table>
+            <hr />
+            <table class="tabla2">
+                <td><a href="/tienda">TIENDA</a></td>
+                <td><a href="/hola">BONOS</a></td>
+                <td><a href="#">DONACIONES</a></td>
+                <td><a href="#">VENDER</a></td>
+                <td><a href="#">CATALOGO</a></td>
+            </table>
+            <hr />
+        </header>
+            
+    </body>
+    
+</main>
+<footer>
+    <div class="redes">
+        <div class="contactos">
+            <a href="https://www.instagram.com/defaulthmembers_/"><img src="../public/img/insta.png"
+                    alt="insta" width="50"></a>
+            <a href=""> <img src="../public/img/whatsapp-logo-11.png" alt="what" width="55"></a>
+            <a href="https://www.facebook.com/profile.php?id=100088520927697&is_tour_dismissed=true"> <img
+                    src="../public/img/Facebook_f_logo_(2019).svg.webp" alt="face" width="50 "></a>
+        </div>
+    </div>
+
+
+</footer>
+
+</html>

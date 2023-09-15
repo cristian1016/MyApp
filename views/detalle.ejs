@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/public/img/default.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/style_detalle.css">
+    <title>TIENDA</title>
+</head>
+
+<main>
+
+    <body>
+
+        <header>
+            <nav id="contenedor_header">
+                <div class="logo_header">
+                    <img src="../public/img/Logo-FondoVerde.png" alt="">
+
+                    <hr id="linea_Vertical">
+                    <div>
+                            <h1>MERCADO CAMPESINO</h1>
+                            <h2>LA MEJOR CALIDAD</h2>
+                    </div>
+                </div>
+
+
+                <div class="links_header">
+                    <td class="co">
+                        <%if (!nombres) { %>
+                            <a class="registro" href="/interfaz-registro">Registro</a>
+                            <% } %>
+                    </td>
+
+                    <td class="co">
+                        <%if (nombres ) { %>
+                            <a class="nav-link" href="#">
+                                <%= nombres %>
+                            </a>
+                            <% } %>
+                    </td>
+
+                    <td class="salir">
+                        <%if (nombres) { %>
+                            <a href="/logout">SALIR</a>
+                            <% } %>
+                    </td>
+
+                    <td class="login">
+                        <%if (!nombres) { %>
+                            <a class="interfazlogin" href="/interfaz-login">Login</a>
+                            <% } %>
+                    </td>
+                </div>
+            </nav>
+        </header>
+
+        <div class="barra">
+            <a class="link" href="/">Inicio</a>
+          </div>
+        <hr id="barra_navegacion">
+
+        <!-- <header>
+            <table>
+                <td class="lupa"><a href="./index.ejs">BUSCAR</a></td>
+                <td class="car"><a href="./index.ejs">CARRITO</a></td>
+
+                <td class="d"><a href="/">D E F A U L T H</a></td>
+                <td><a href="/"><img class="foto1" src="/public/img/logo.png" alt="logo" /></a></td>
+                <td class="m"><a href="/">M E M B E R S</a></td>
+                <td class="co">
+        </header> -->
+        <div class="todo">
+            <div class="articulo">
+
+                <img src="<%= articulo[0].url_imagen %>" alt="">
+                <table class="precio">
+                    <td>
+                        <%= articulo[0].valor %>
+                    </td>
+                </table>
+
+            </div>
+
+            <div class="comprar">
+                <h1>
+                    <%= articulo[0].nombre %>
+                </h1>
+                <h2>DESCRIPCIÓN</h2>
+                <h3>
+                    <%= articulo[0].detalle %>
+                </h3>
+                <form class="buton" action="/comprar/<%= articulo[0].codigo %>" method="post">
+                    <button type="submit">Comprar</button>
+                </form>
+            </div>
+
+    </body>
+
+</main>
+
+<footer>
+
+    <div id="contenedor_informacion">
+
+        <div id="email">
+            <img src="../public/Img/Logo_Email.png" alt="">
+            <h3>Email</h3>
+            <p>MercadoCampesino@gmail.com</p>
+        </div>
+
+        <hr>
+        <div id="sobre_nosotros">
+            <img src="../public/Img/Logo_tiendaSobreNosotros.png" alt="">
+            <h3>Sobre nosotros</h3>
+            <p>Como mercado campesino queremos ofrecerles a nuestros usuarios, un lugar seguro y de buena calidad
+                donde puedan comprar y/o vender sus productos agricolas, sin intermediarios y de forma directa.</p>
+        </div>
+        <hr>
+        <div id="contacto">
+            <img src="../public/Img/Logo_telefono.png" alt="">
+            <h3>Contactanos</h3>
+            <p>+57 313-629-7064</p>
+            <p>+57 312-456-1367</p>
+        </div>
+
+    </div>
+</footer>
+
+</html>

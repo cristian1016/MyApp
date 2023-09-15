@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../img/fondoRegistro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 400px;
+    background-color: rgba(10, 9, 9, 0.651);
+    border-radius: 20px;
+    padding-bottom: 23px;
+}
+
+#login_center {
+    width: 70%;
+    height: 80%;
+    display: grid;
+    align-content:space-around ;
+}
+
+.iniciar h3 {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'calibri';
+}
+
+.login .digitar {
+    position: relative;
+}
+
+.login .digitar input {  
+    width: 100%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.login .digitar label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'calibri';
+}
+
+.login .digitar input:focus~label,
+.login .digitar input:valid~label {
+    top: -25px;
+    left: 0;
+    color: rgb(44, 253, 2);
+    font-size: 17px;
+}
+
+.logear {
+    width: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    background: rgba(43, 200, 0, 0.605);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#logear {
+    display: flex;
+    justify-content: center;
+}
+#link_inicio, .comunity {
+    text-align: center;
+    color: #ffffffb0;
+}
+
+#link_inicio a:hover,
+#link_login a:hover {
+    color: #1ff707;
+}
+
+#link_inicio a,
+#link_login a {
+    color: #ffffff;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+} 

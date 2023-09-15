@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #F4F2DC;
+    font-family: calibri;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  */
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.barra {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: none;
+    color:#2F9F00;
+    font-size: 20px;
+}
+
+.link:hover {
+    color: #205908;
+}
+
+#barra_navegacion {
+    color: #2F9F00;
+    border: solid 1px;
+    width: 100%;
+}
+
+header{
+    background-color: #2F9F00;
+    color: white;
+    padding: 7px 70px 7px 70px;
+}
+
+#contenedor_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2F9F00;
+}
+
+#contenedor_header .logo_header{
+    display: flex;
+    align-items: center;
+    background-color: #2F9F00;
+}
+
+#contenedor_header .logo_header img{
+    width: 90px;
+    height: 90px;
+}
+
+#linea_Vertical{
+    border-left: 2px solid white; 
+    height: 50px ;
+    margin-right: 15px;
+}
+
+#contenedor_header .logo_header h1{
+    font-size: 26px;
+    background-color: #2F9F00;
+}
+
+#contenedor_header .logo_header h2{
+    font-size: 17px;
+    background-color: #2F9F00;
+}
+
+#contenedor_header .links_header {
+    display: flex;
+    align-items: center;
+    background-color: #2F9F00;
+}
+
+#contenedor_header a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+    background-color: #2F9F00;
+}
+/*Fin Header*/
+
+.todo {
+    width: 100%;
+    max-width: 1500px;
+    height: 481px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.todo .articulo {
+    width: 500px;
+    height: 465px;
+    border-radius: 8px;
+
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+
+}
+
+
+
+.todo .articulo img {
+    width: 450px;
+    height: 400px;
+}
+
+.todo .articulo h4 {
+    font-weight: 1000;
+}
+
+.todo .articulo p {
+    box-shadow: 0 2px #388f16;
+    padding: 0 1rem;
+    font-size: 38px;
+    font-weight: 300;
+}
+
+/*Boton comprar*/
+.comprar {
+    background-color:#F4F2DC;
+    border-radius: 10px;
+    width: 500px;
+    height: 465px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+}
+
+.comprar h1{
+    font-size: 50px;
+    color: #2F9F00;
+}
+
+.comprar h3 {
+
+    margin-top: 60px;
+    text-align: center;
+    color: #6c6d6c;
+}
+
+.comprar button {
+    margin-top: 40%;
+    background-color: #2F9F00;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 25px;
+    border: none;
+    color: white;
+}
+
+.comprar button:hover {
+    background-color: #358615;
+}
+
+.precio {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 23%;
+    border-bottom: 2px solid #388f16;
+    padding: 0px 100px 0px 100px;
+}
+
+.precio td {
+    margin-left: 400px;
+}
+
+
+.tabla3 td {
+    padding: 0px 280px 10px 200px;
+}
+
+.d a {
+    text-decoration: none;
+    color:#388f16;
+}
+
+.m a {
+    text-decoration: none;
+    color:#388f16;
+}
+
+.foto1 {
+    width: 90px;
+}
+
+.redes{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.redes a{
+    margin: 50px 10px 20px 10px;
+}
+
+
+footer{
+    height: 220px ;
+    background-color: #2F9F00;
+    position: relative;
+    top: 50px; 
+    margin-top: 80px;
+}
+
+#contenedor_informacion{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2F9F00;
+    padding-top: 50px;
+}
+
+#contenedor_informacion img{
+    width: 50px;
+    height: 50px;
+}
+
+#sobre_nosotros{
+    background-color: #2F9F00;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+
+}
+
+#sobre_nosotros h3{
+    background-color: #2F9F00;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#sobre_nosotros p{
+    background-color: #2F9F00;
+    font-size: 10px;
+    color: white;
+}
+
+#email{
+    background-color: #2F9F00;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+#email h3{
+    background-color: #2F9F00;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#email p{
+    background-color: #2F9F00;
+    font-size: 10px;
+    color: white;
+}
+
+#contacto{
+    background-color: #2F9F00;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+}
+
+#contacto h3{
+    background-color: #2F9F00;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#contacto p{
+    background-color: #2F9F00;
+    font-size: 10px;
+    color: white;
+    margin-bottom: 10px;
+}

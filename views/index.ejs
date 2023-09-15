@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../public/img/Logo-FondoVerde.png" type="image/x-icon">
+    <link rel="stylesheet" href="/public/css/style_index.css">
+    <title>MERCADO CAMPESINO</title>
+</head>
+
+<body>
+    <header>
+        <nav id="contenedor_header">
+            <div class="logo_header">
+                <img src="../public/img/Logo-FondoVerde.png" alt="">
+
+                <hr id="linea_Vertical">
+                <div>
+                    <h1>MERCADO CAMPESINO</h1>
+                    <h2>LA MEJOR CALIDAD</h2>
+                </div>
+            </div>
+
+
+            <div class="links_header">
+                <td class="co">
+                    <%if (!nombres) { %>
+                        <a class="registro" href="/interfaz-registro">Registro</a>
+                        <% } %>
+                </td>
+
+                <td class="co">
+                    <%if (nombres ) { %>
+                        <a class="nav-link" href="#">
+                            <%= nombres %>
+                        </a>
+                        <% } %>
+                </td>
+
+                <td class="salir">
+                    <%if (nombres) { %>
+                        <a href="/logout">SALIR</a>
+                        <% } %>
+                </td>
+
+                <td class="login">
+                    <%if (!nombres) { %>
+                        <a class="interfazlogin" href="/interfaz-login">Login</a>
+                        <% } %>
+                </td>
+            </div>
+        </nav>
+    </header>
+
+    <div class="barra">
+      <a class="link" href="/tienda">TIENDA</a>
+    </div>
+    <hr id="barra_navegacion">
+
+
+    <nav>
+        <div class="slider-frame">
+            <ul>
+                <li><img src="../public/img/Img_Campesino1.webp" alt=""></li>
+                <li><img src="../public/img/Img_Campesino2.webp" alt=""></li>
+                <li><img src="../public/img/Img_Campesino3.jpg" alt=""></li>
+                <li><img src="../public/img/Img_Campesino4.jpg" alt=""></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="seccion_mercados">
+        <h1>MERCADOS RECOMENDADOS</h1>
+
+        <div>
+            <div id="mercados_seccion">
+                <abbr title="holaaaa">
+                    <a href="">
+                        <div id="hojas_debajo">
+                            <img class="img_mercados" id="img_mercados" src="../public/img/Logo_Campesino1.png" alt="">
+                            <img id="img_hojas_Izquierda" src="../public/Img/Hojas_Izquierdo.png" alt="">
+                        </div>
+                    </a>
+                </abbr>
+                <a href="">
+                    <div>
+                        <img class="img_arreglo" id="img_mercados" src="../public/Img/Logo_Campesino2.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino3.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino4.png" alt="">
+                    </div>
+                </a>
+
+            </div>
+
+            <div id="mercados_seccion">
+                <a href="">
+                    <div>
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino5.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino6.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino7.png" alt="">
+                    </div>
+                </a>
+                <a href="">
+                    <div id="hojas_debajo">
+                        <img id="img_mercados" src="../public/Img/Logo_Campesino8.png" alt="">
+                        <img id="img_hojas_Derecha" src="../public/Img/Hojas_Derecho.png" alt="">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="ver_mas_mercados">
+        <a id="VerMás_mer">Ver más...</a>
+    </div>
+
+    <hr id="Linea_general">
+
+    <div id="Ofertas_productos">
+        <h1>OFERTAS DEL MES</h1>
+
+        <div id="contenedor_ofertas">
+            <div id="descuentos">
+                <h2>!APROVECHA¡</h2>
+                <P class="recibe_ofertas">RECIBE HASTA</P>
+                <div id="descuento_ofertas">
+                    <p class="descuento_ofertas">45%</p>
+                    <p class="deDescuento_ofertas">de descuento</p>
+                </div>
+            </div>
+
+            <div id="destacados">
+                <h2 id="titulo_destacados"> LOS MÁS DESTACADOS</h2>
+                <p>POR</p>
+
+                <div class="logo_ofertas" x>
+                    <img src="../public/Img/Logo-FondoDeterminado.png" alt="">
+                    <hr id="linea_Vertical_ofer">
+                    <div>
+                        <h1 class="titulo_mercado">MERCADO CAMPESINO</h1>
+                        <h2>LA MEJOR CALIDAD</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Seccion_producto">
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-30% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_tomate.jpg" alt=""></a>
+                    <a href="">Tomate</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-40% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_mango.jpg" alt=""></a>
+                    <a href="">Mango</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-10% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_guayaba.jpg" alt=""></a>
+                    <a href="">Guayaba</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-40% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_aguacate.jpg" alt=""></a>
+                    <a href="">Aguacate</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-20% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_cebolla.jpg" alt=""></a>
+                    <a href="">Cebolla</a>
+                    <hr class="Linea_producto">
+
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Seccion_producto">
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-27% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_cilantro.jpg" alt=""></a>
+                    <a href="">Cilantro</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento">-40% DCTO</p>
+                    <a href=""><img src="../public/Img/Producto_cafeGeisha.jpg" alt=""></a>
+                    <a href="">Café Geisha</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-45% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_banano.jpg" alt=""></a>
+                    <a href="">Banano</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-10% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_papaya.jpg" alt=""></a>
+                    <a href="">Papaya</a>
+                    <hr class="Linea_producto">
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Contenedor_producto">
+                <div class="Informacion_producto">
+                    <p id="descuento"><strong>-37% DCTO</strong></p>
+                    <a href=""><img src="../public/Img/Producto_mandarina.jpg" alt=""></a>
+                    <a href="">Mandarina</a>
+                    <hr class="Linea_producto">
+
+                    <div class="Precio_producto">
+                        <div>
+                            <p>$3.500</p>
+                            <p id="precio_oferta"><strong>$6̶.̶5̶0̶0̶</strong></p>
+                        </div>
+                        <p>1 Kg</p>
+                    </div>
+                    <div id="comprar_producto">
+                        <a href="">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <hr id="Linea_general"> -->
+
+
+
+
+    <!-- <div id="calidad_productos">
+        <h1>¡CONOCE MÁS CALIDAD!</h1>
+        <h2>Productos frescos al mejor precio</h2>
+    </div>
+
+    <div id="Seccion_producto">
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_mango.jpg" alt=""></a>
+                <a href="">Mango</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$2.500</p>
+                    <p>1 Kg</p>
+                </div>
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_mandarina.jpg" alt=""></a>
+                <a href="">Mandarina</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$7.000</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_tomate.jpg" alt=""></a>
+                <a href="">Tomate</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_cilantro.jpg" alt=""></a>
+                <a href="">Cilantro</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$8.000</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_cebolla.jpg" alt=""></a>
+                <a href="">Cebolla</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Seccion_producto">
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_aguacate.jpg" alt=""></a>
+                <a href="">Aguacate</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_banano.jpg" alt=""></a>
+                <a href="">Banano</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$4.000</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_papaya.jpg" alt=""></a>
+                <a href="">Papaya</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_guayaba.jpg" alt=""></a>
+                <a href="">Guayaba</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_cebolla.jpg" alt=""></a>
+                <a href="">Cebolla</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_banano.jpg" alt=""></a>
+                <a href="">Banano</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Seccion_producto">
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_tomate.jpg" alt=""></a>
+                <a href="">Tomate</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_mango.jpg" alt=""></a>
+                <a href="">Mango</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_mandarina.jpg" alt=""></a>
+                <a href="">Mandarina</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_aguacate.jpg" alt=""></a>
+                <a href="">Aguacate</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_papaya.jpg" alt=""></a>
+                <a href="">Papaya</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="Contenedor_producto">
+            <div class="Informacion_producto">
+                <a href=""><img src="../public/Img/Producto_cilantro.jpg" alt=""></a>
+                <a href="">Cilantro</a>
+                <hr class="Linea_producto">
+                <div class="Precio_producto">
+                    <p>$6.500</p>
+                    <p>1 Kg</p>
+                </div>
+
+                <div id="comprar_producto">
+                    <a href="">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="hojas_footer">
+        <img src="Img/HojasAbajo_Izq.png" alt="">
+        <img src="Img/HojasAbajo_Dere.png" alt="">
+    </div> -->
+    <footer>
+
+        <div id="contenedor_informacion">
+
+            <div id="email">
+                <img src="../public/Img/Logo_Email.png" alt="">
+                <h3>Email</h3>
+                <p>MercadoCampesino@gmail.com</p>
+            </div>
+
+            <hr>
+            <div id="sobre_nosotros">
+                <img src="../public/Img/Logo_tiendaSobreNosotros.png" alt="">
+                <h3>Sobre nosotros</h3>
+                <p>Como mercado campesino queremos ofrecerles a nuestros usuarios, un lugar seguro y de buena calidad
+                    donde puedan comprar y/o vender sus productos agricolas, sin intermediarios y de forma directa.</p>
+            </div>
+            <hr>
+            <div id="contacto">
+                <img src="../public/Img/Logo_telefono.png" alt="">
+                <h3>Contactanos</h3>
+                <p>+57 313-629-7064</p>
+                <p>+57 312-456-1367</p>
+            </div>
+
+        </div>
+
+        <div id="Lineas_footer">
+            <hr id="Linea_footer">
+            <hr id="Linea_footer">
+        </div>
+
+        <div id="contenedor_Pag-po">
+
+            <div id="politicas_pagos">
+                <h3>Métodos de pago</h3>
+                <div class="politicas_pagos">
+                    <img src="../public/Img/Logo_compraVISA.png" alt="">
+                    <img src="../public/Img/Logo_compraBancC.png" alt="">
+                </div>
+                <div class="politicas_pagos">
+                    <img src="../public/Img/Logo_compraEfecty.png" alt="">
+                    <img src="../public/Img/Logo_compraDaviV.png" alt="">
+                </div>
+            </div>
+            <hr>
+            <div id="terminosYCondiciones">
+                <h3>Terminos y condiciones</h3>
+                <div id="links_terminos">
+                    <a href="">Contrato de compraventa en linea</a>
+                    <a href="">Politíca de privacidad</a>
+                    <a href="">Politíca de cambios y devoluciones</a>
+                    <a href="">Código de ética</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+<!-- <body>
+    <main>
+      <header>
+        <table>
+            <td class="lupa"><a href="./index.html">BUSCAR</a></td>
+            <td class="car"><a href="./index.html">CARRITO</a></td>
+         
+            <td class="d"><a href="/">D E F A U L T H</a></td>
+            <td><a href="/"><img class="foto1" src="/public/img/logo.png" alt="logo"/></a></td>
+            <td class="m"><a href="/">M E M B E R S</a></td>
+            
+            <td class="co">
+              <%if (!nombres) { %>
+              <a class="registro" href="/interfaz-registro">Registro</a>
+              <% } %>
+            </td>
+  
+              <td class="co">
+                <%if (nombres ) { %>
+                <a class="nav-link" href="#"><strong><%= nombres %></strong></a>
+                <% } %>
+              </td>
+
+              <td class="salir">
+                <%if (nombres) { %>
+                <a href="/logout">SALIR</a>
+                <% } %>
+              </td>
+
+              <td class="login">
+                <%if (!nombres) { %>
+                <a class="interfazlogin" href="/interfaz-login">Login</a>
+                <% } %>
+              </td>
+              
+          <div class="clear"></div>
+        </table>
+        <hr />
+        <table class="tabla2">
+          <td><a href="/tienda">TIENDA</a></td>
+          <td><a href="/hola">BONOS</a></td>
+          <td><a href="#">DONACIONES</a></td>
+          <td><a href="#">VENDER</a></td>
+          <td><a href="#">CATALOGO</a></td>
+        </table>
+
+        <hr />
+      </header>
+
+      <img
+        class="men"
+        src="/public/img/imagen-central.png"
+        alt="ima"
+        width="1300"
+      />
+
+      <table class="lo-nuevo">
+        <td class="lo-nuevo01"><a href="">LO NUEVO - PUBLICACIONES</a></td>
+      </table>
+      <table class="mujer">
+        <td class="mujer01"><a href="">MUJER</a></td>
+      </table>
+      <br /><br />
+
+      <div class="catalogo-f">
+        <div class="ropa">
+          <img src="../public/img/saco-f.jpg" alt="" />
+          <h4></h4>
+          <p>$ 35.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa">
+          <img src="../public/img/vestido-f.webp" alt="" />
+          <h4>VESTIDO</h4>
+          <p>$ 35.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa">
+          <img src="../public/img/blusa-f.jpg" alt="" />
+          <h4>BLUSA</h4>
+          <p>$ 35.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa">
+          <img src="../public/img/pantalon-f.webp" alt="" />
+          <h4>PANTALON</h4>
+          <p>$ 35.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <table class="hombre">
+        <td class="hombre01"><a href="">HOMBRE</a></td>
+      </table>
+      <br /><br />
+
+      <div class="catalogo-m">
+        <div class="ropa-m">
+          <img src="../public/img/saco-m.webp" alt="" />
+          <h4>SACO</h4>
+          <p>50.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa-m">
+          <img src="../public/img/tennis1-m.webp" alt="" />
+          <h4>TENNIS</h4>
+          <p>30.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa-m">
+          <img src="../public/img/pantalon-m.jpg" alt="" />
+          <h4>PANTALON</h4>
+          <p>55.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+        <div class="ropa-m">
+          <img src="../public/img/playera-m.jpg   " alt="" />
+          <h4>PLAYERA</h4>
+          <p>25.000</p>
+          <a href="#">Leer mas</a>
+        </div>
+      </div>
+
+      <table class="tabla3">
+        <td></td>
+      </table>
+      <footer>
+      <div class="redes">
+      <div class="contactos">
+       <a href="https://www.instagram.com/defaulthmembers_/"><img src="../public/img/insta.png" alt="insta" width="50"></a>
+      <a href=""> <img src="../public/img/whatsapp-logo-11.png" alt="what" width="55"></a>
+      <a href="https://www.facebook.com/profile.php?id=100088520927697&is_tour_dismissed=true"> <img src="../public/img/Facebook_f_logo_(2019).svg.webp" alt="face" width="50 "></a>
+      </div>
+      </div>
+      
+      </footer>
+    </main>
+    
+  </body> -->
+
+</html>
